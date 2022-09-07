@@ -34,7 +34,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-### URLS
+## URLS
 
  - Adding Bootstrap to Next.js
  - https://dev.to/anuraggharat/adding-bootstrap-to-nextjs-39b2
+ or
+ - https://blog.logrocket.com/handling-bootstrap-integration-next-js/
