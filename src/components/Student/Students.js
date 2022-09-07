@@ -1,4 +1,5 @@
-const Students = () => {
+const Students = ({student}) => {
+    console.log("Student :", student);
     return (
         <>
             <div className="container my-4">

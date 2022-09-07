@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92aa58a9-430d-4a51-ac20-7e430ef74b31" name="Default" comment="" />
+    <list default="true" id="92aa58a9-430d-4a51-ac20-7e430ef74b31" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/Student/Students.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Student/Students.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/students.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/students.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +26,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
+            <state relative-caret-position="308">
               <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -32,11 +35,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="students.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="students.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/students.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="484">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Students.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Students.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Student/Students.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+            <state relative-caret-position="22">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -80,8 +86,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Context/AuthContext.js" />
         <option value="$PROJECT_DIR$/src/pages/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/students.js" />
         <option value="$PROJECT_DIR$/src/components/Student/Students.js" />
+        <option value="$PROJECT_DIR$/src/pages/students.js" />
       </list>
     </option>
   </component>
@@ -264,7 +270,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
+        <state relative-caret-position="308">
           <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -272,17 +278,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/students.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Student/Students.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="22">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Student/Students.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/students.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        <state relative-caret-position="484">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
