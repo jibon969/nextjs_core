@@ -23,7 +23,6 @@ const StudentPage = () => {
                  <Students student={student} />
             ))}
 
-
         </div>
     )
 };

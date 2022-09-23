@@ -1,5 +1,4 @@
 const Students = ({student}) => {
-    console.log("Student :", student);
     return (
         <>
             <div className="container my-4">
@@ -41,7 +40,7 @@ const Students = ({student}) => {
                             <tbody>
                             <tr className="text-center">
                                 <th scope="row">1</th>
-                                <td>Mark</td>
+                                <td>{student.title}</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
                                 <td>
