@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const BlogDetails = () => {
+const BlogDetails = ({blogDetail}) => {
     return (
         <div>
             <div className="container my-5">
