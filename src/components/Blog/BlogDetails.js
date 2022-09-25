@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-const BlogDetails = ({blogDetail}) => {
+const BlogDetails = () => {
     return (
         <div>
             <div className="container my-5">
@@ -17,8 +17,7 @@ const BlogDetails = ({blogDetail}) => {
                                         style={{width: "100%", height: "400"}}
                                         className="img-responsive"
                                     />
-                                    <h4 className="my-4">Google I/O 2021: Android 12 to Pixel 5A, everything that is
-                                        expected</h4>
+                                    <h4 className="my-4">ee</h4>
                                     <p className="text-justify">
                                         Yes, in some circumstances, it is possible to use a copyright-protected work
                                         without
