@@ -1,20 +1,23 @@
 import React from "react";
 import BlogDetail from '../../components/Blog/BlogDetails'
 
-const BlogDetailPage = ({blogDetail}) => {
+const BlogDetailPage = () => {
     return(
         <div>
-            <BlogDetail blogDetail={blogDetail} />
+            <BlogDetail/>
         </div>
     )
 
 };
 
 export async function getServerSideProps(context) {
-    const blog = `http://127.0.0.1:8000/blog/${context.params.id}/`;
+    const response = `http://127.0.0.1:8000/blog/${context.params.id}/`;
+    const about_blog =  response.data;
+    console.log("about Data :", about_blog);
+
     return {
         props: {
-            blogDetail,
+
         },
     };
 }
