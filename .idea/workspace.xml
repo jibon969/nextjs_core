@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9db0a5-7378-4c11-a8e9-b303691900ea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Student/AddStudent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Student/AddStudent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Student/DeleteStudent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Student/DeleteStudent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/students/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/students/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/students/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+            <state relative-caret-position="154">
+              <caret line="100" column="75" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="75" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -26,57 +27,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditStudent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Student/EditStudent.js">
+      <file leaf-file-name="AddStudent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Student/AddStudent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-88">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="-44">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="react.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="2705" column="13" selection-start-line="2705" selection-start-column="13" selection-end-line="2705" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteStudent.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DeleteStudent.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Student/DeleteStudent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="18" column="33" selection-end-line="43" selection-end-column="29" />
+            <state relative-caret-position="302">
+              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddStudent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Student/AddStudent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Students.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Student/Students.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2882">
-              <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="134" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_document.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/_document.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -114,10 +83,10 @@
         <option value="$PROJECT_DIR$/src/pages/tryNextjs/index.js" />
         <option value="$PROJECT_DIR$/src/pages/student/index.js" />
         <option value="$PROJECT_DIR$/src/components/Student/Students.js" />
-        <option value="$PROJECT_DIR$/src/components/Student/DeleteStudent.js" />
-        <option value="$PROJECT_DIR$/src/components/Student/AddStudent.js" />
         <option value="$PROJECT_DIR$/src/components/Student/EditStudent.js" />
         <option value="$PROJECT_DIR$/src/pages/students/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Student/AddStudent.js" />
+        <option value="$PROJECT_DIR$/src/components/Student/DeleteStudent.js" />
       </list>
     </option>
   </component>
@@ -194,7 +163,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Professional/BelafaceLimited/Belasea/Belasea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -246,8 +215,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.61764705" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17549168" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.6171617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17776097" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -535,13 +504,6 @@
     <entry file="file://$PROJECT_DIR$/src/pages/_document.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Student/AddStudent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Student/Students.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2882">
@@ -551,21 +513,14 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
+        <state relative-caret-position="59070">
           <caret line="2705" column="13" selection-start-line="2705" selection-start-column="13" selection-end-line="2705" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Student/DeleteStudent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="18" column="33" selection-end-line="43" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Student/EditStudent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
+        <state relative-caret-position="220">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
@@ -575,11 +530,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/students/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+        <state relative-caret-position="154">
+          <caret line="100" column="75" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="75" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Student/AddStudent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Student/DeleteStudent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
         </state>
       </provider>
     </entry>

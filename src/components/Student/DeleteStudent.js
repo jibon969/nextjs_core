@@ -14,8 +14,8 @@ const DeleteStudent = ({id, deleteStudent}) => {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Modal
-                                title
+                            <h5 className="modal-title" id="exampleModalLabel">
+                                Delete Student
                             </h5>
                             <button
                                 type="button"
