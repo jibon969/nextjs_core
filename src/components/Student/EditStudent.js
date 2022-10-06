@@ -14,7 +14,6 @@ const EditStudent = ({id}) => {
         fetch(`http://127.0.0.1:8000/student-details/${id}/`)
             .then(res => res.json())
             .then(data => {
-                // console.log(data);
                 setName(data.name);
                 setDept(data.dept);
                 setRoll(data.roll);
@@ -51,16 +50,16 @@ const EditStudent = ({id}) => {
                 type="button"
                 className="btn btn-secondary"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModalEdit">
+                data-bs-target="#updateModal">
                 Edit
             </button>
-            <div className="modal fade" id="exampleModalEdit" tabIndex="-1"
-                 aria-labelledby="exampleModalLabelEdit" aria-hidden="true">
+            <div className="modal fade" id="updateModal" tabIndex="-1"
+                 aria-labelledby="updateLeModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabelEdit">Modal
-                                title
+                            <h5 className="modal-title" id="updateLeModalLabel">
+                                Update Student Info
                             </h5>
                             <button
                                 type="button"

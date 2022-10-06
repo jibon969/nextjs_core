@@ -90,9 +90,11 @@ const AddStudent = () => {
                                         setRoll(e.target.value)
                                     }}
                                 />
-                                <button className="btn btn-secondary"
-                                        onClick={() => router.push("/students")}>Submit
-                                </button>
+                                <div className="text-center">
+                                    <button className="btn btn-secondary"
+                                            onClick={() => router.push("/students")}>Submit
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </div>
