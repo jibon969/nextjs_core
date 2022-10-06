@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {useRouter} from 'next/router'
+import DeleteStudent from '../../components/Student/DeleteStudent'
+import EditStudent from '../../components/Student/EditStudent'
 
 
 // Fetching Data
@@ -17,42 +19,20 @@ export const getStaticProps = async () => {
 
 const StudentsPage = ({students}) => {
 
+    const [showModal, setShowModal] = useState(false);
+
+    const handleModalShow = () => {
+        setShowModal(true)
+    };
+
     const router = useRouter();
     // const {id} = router.query;
-
-    // const getStudents = () => {
-    //     setLoading(true);
-    //     fetch(`http://127.0.0.1:8000/student-list/`)
-    //         .then((response) => {
-    //             if (!response.ok) {
-    //                 throw new Error(
-    //                     `This is an HTTP error: The status is ${response.status}`
-    //                 );
-    //             }
-    //             return response.json();
-    //         })
-    //         .then((actualData) => {
-    //             setStudent(actualData);
-    //             setError(null);
-    //         })
-    //         .catch((err) => {
-    //             setError(err.message);
-    //             setStudent(null);
-    //         })
-    //         .finally(() => {
-    //             setLoading(false);
-    //         });
-    // };
-    //
-    // useEffect(() => {
-    //     getStudents()
-    // }, []);
-
 
     // Post Request
     const [name, setName] = useState('');
     const [dept, setDept] = useState('');
     const [roll, setRoll] = useState('');
+    const [deleteId, setDeleteId] = useState(null);
 
     const addStudent = (event) => {
         event.preventDefault();
@@ -143,10 +123,16 @@ const StudentsPage = ({students}) => {
                                         <td>{data.dept}</td>
                                         <td>{data.roll}</td>
                                         <td>
-                                            <button className="btn btn-primary mx-2" onClick={()=>updateStudent(data.id)}>Edit</button>
-                                            <button className="btn btn-danger"
-                                                    onClick={() => deleteStudent(data.id)}>Delete
-                                            </button>
+                                            <EditStudent
+                                                showmodal={handleModalShow}
+                                                id={data.id}
+                                            />
+                                            <span className="mx-1"/>
+                                            <DeleteStudent
+                                                showmodal={handleModalShow}
+                                                id={data.id}
+                                                deleteStudent={deleteStudent}
+                                            />
                                         </td>
                                     </tr>
                                 ))
@@ -179,7 +165,7 @@ const StudentsPage = ({students}) => {
                         <div className="modal-dialog modal-dialog-centered">
                             <div className="modal-content">
                                 <div className="modal-header">
-                                    <h5 className="modal-title" id="addStaticBackdropLabel">Student Form</h5>
+                                    <h5 className="modal-title" id="addStaticBackdropLabel">Student Form </h5>
                                     <button
                                         type="button"
                                         className="btn-close"
@@ -218,12 +204,45 @@ const StudentsPage = ({students}) => {
                                                 setRoll(e.target.value)
                                             }}
                                         />
-                                        <button className="btn btn-secondary" onClick={() => router.push("/students")}>Submit</button>
+                                        <button className="btn btn-secondary"
+                                                onClick={() => router.push("/students")}>Submit
+                                        </button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    {/*Delete Modal*/}
+                    <div className="modal fade"
+                         id="deleteStaticBackdrop"
+                         data-bs-backdrop="static"
+                         data-bs-keyboard="false"
+                         tabIndex="-1"
+                         aria-labelledby="deleteStaticBackdrop"
+                         aria-hidden="true">
+                        <div className="modal-dialog modal-dialog-centered">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="deleteStaticBackdrop">Delete Form</h5>
+                                    <button
+                                        type="button"
+                                        className="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"/>
+                                </div>
+                                <div className="modal-body">
+                                    <div className="text-center">
+                                        <h6 className="mb-4">Are you sure you want to delete this item ? </h6>
+                                        <button className="btn btn-danger">Yes</button>
+                                        <span className="mx-1"/>
+                                        <button className="btn btn-primary">No</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
