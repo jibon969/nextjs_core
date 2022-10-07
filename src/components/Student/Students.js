@@ -1,5 +1,4 @@
-const Students = ({data}) => {
-    console.log("Data :", data);
+const Students = () => {
     return (
         <>
             <div className="container my-4">
@@ -7,13 +6,7 @@ const Students = ({data}) => {
                 <hr/>
                 <div className="row">
                     <div className="col-md-3">
-                        <button
-                            type="button"
-                            className="btn btn-secondary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#addStaticBackdrop">
-                            Add
-                        </button>
+
                     </div>
                     <div className="col-md-6"/>
                     <div className="col-md-3">
@@ -28,7 +21,6 @@ const Students = ({data}) => {
                                 />
                                 <span className="input-group-text" id="basic-addon2">Search</span>
                             </div>
-
                         </form>
                     </div>
                 </div>
@@ -59,7 +51,6 @@ const Students = ({data}) => {
                                     </tr>
                                 ))
                             }
-
                             </tbody>
                         </table>
                         <div style={{float: "right"}}>
@@ -72,58 +63,6 @@ const Students = ({data}) => {
                                     <li className="page-item"><a className="page-link" href="#">Next</a></li>
                                 </ul>
                             </nav>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="row">
-                    {/*Model Design */}
-                    <div className="modal fade"
-                         id="addStaticBackdrop"
-                         data-bs-backdrop="static"
-                         data-bs-keyboard="false"
-                         tabindex="-1"
-                         aria-labelledby="addStaticBackdropLabel"
-                         aria-hidden="true">
-                        <div className="modal-dialog modal-dialog-centered">
-                            <div className="modal-content">
-                                <div className="modal-header">
-                                    <h5 className="modal-title" id="addStaticBackdropLabel">Student Form</h5>
-                                    <button
-                                        type="button"
-                                        className="btn-close"
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close"/>
-                                </div>
-                                <div className="modal-body">
-                                    <form action="#">
-                                        <div className="row">
-                                            <div className="col">
-                                                <input
-                                                    type="text"
-                                                    placeholder="Enter Name"
-                                                    className="form-control mb-3"
-                                                />
-                                            </div>
-                                            <div className="col">
-                                                <input
-                                                    type="text"
-                                                    placeholder="Enter Department"
-                                                    className="form-control mb-3"/>
-                                            </div>
-                                        </div>
-                                        <input type="text" placeholder="Enter Roll" className="form-control mb-3"/>
-                                    </form>
-                                </div>
-                                <div className="modal-footer">
-                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
-                                        Close
-                                    </button>
-                                    <button type="button" className="btn btn-primary">
-
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
