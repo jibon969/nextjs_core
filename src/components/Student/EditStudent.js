@@ -40,7 +40,6 @@ const EditStudent = ({id}) => {
             .catch((err) => {
                 console.log(err.message)
             })
-
     };
 
 
