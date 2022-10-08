@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
 import {useRouter} from 'next/router'
 
-const EditStudent = ({id}) => {
-    console.log("ID :", id);
+const EditStudent = ({id, data}) => {
 
-    const router = useRouter();
-    // const {id} = router.query;
+    console.log("ID", id)
+    console.log("data", data)
+
     const [name, setName] = useState('');
     const [dept, setDept] = useState('');
     const [roll, setRoll] = useState('');
@@ -14,6 +14,7 @@ const EditStudent = ({id}) => {
         fetch(`http://127.0.0.1:8000/student-details/${id}/`)
             .then(res => res.json())
             .then(data => {
+                console.log("Inside : ",data);
                 setName(data.name);
                 setDept(data.dept);
                 setRoll(data.roll);
@@ -32,10 +33,7 @@ const EditStudent = ({id}) => {
             },
             body: JSON.stringify(data)
         }).then((res) => {
-            setName(res.name);
-            setDept(res.dept);
-            setRoll(res.roll);
-            router.push("/students")
+            console.log("res :", res)
         })
             .catch((err) => {
                 console.log(err.message)
@@ -45,6 +43,7 @@ const EditStudent = ({id}) => {
 
     return (
         <>
+
             <button
                 type="button"
                 className="btn btn-secondary"
@@ -74,7 +73,7 @@ const EditStudent = ({id}) => {
                                         className="form-control mb-3"
                                         placeholder="Name"
                                         name="name"
-                                        value={name}
+                                        value={data.name}
                                         onChange={(e) => {
                                             setName(e.target.value)
                                         }}
@@ -84,7 +83,7 @@ const EditStudent = ({id}) => {
                                         className="form-control mb-3"
                                         placeholder="Department"
                                         name="dept"
-                                        value={dept}
+                                        value={data.dept}
                                         onChange={(e) => {
                                             setDept(e.target.value)
                                         }}
@@ -94,12 +93,14 @@ const EditStudent = ({id}) => {
                                         className="form-control mb-3"
                                         placeholder="Roll"
                                         name="roll"
-                                        value={roll}
+                                        value={data.roll}
                                         onChange={(e) => {
                                             setRoll(e.target.value)
                                         }}
                                     />
-                                    <button onClick={(event) => updateStudent(event)} type="submit" className="btn btn-secondary">Submit</button>
+                                    <button onClick={(event) => updateStudent(event)} type="submit"
+                                            className="btn btn-secondary">Submit
+                                    </button>
                                 </form>
                             </div>
                         </div>
