@@ -95,6 +95,7 @@ const StudentsPage = ({students}) => {
                                             <EditStudent
                                                 showmodal={handleModalShow}
                                                 id={data.id}
+                                                data={data}
                                             />
                                             <span className="mx-1"/>
                                             <DeleteStudent
