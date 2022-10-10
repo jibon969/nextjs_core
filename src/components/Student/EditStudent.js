@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import {useRouter} from 'next/router'
 
 const EditStudent = ({id, data}) => {
 
@@ -8,7 +7,7 @@ const EditStudent = ({id, data}) => {
     const [roll, setRoll] = useState('');
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:8000/student-details/22/`)
+        fetch(`http://127.0.0.1:8000/student-details/24/`)
             .then(res => res.json())
             .then(data => {
                 console.log("Inside : ",data);
@@ -22,7 +21,7 @@ const EditStudent = ({id, data}) => {
     const updateStudent = (event) => {
         event.preventDefault();
         let data = {name, dept, roll};
-        fetch(`http://127.0.0.1:8000/student-details/22/`, {
+        fetch(`http://127.0.0.1:8000/student-details/24/`, {
             method: "PUT",
             headers: {
                 'Accept': 'application/json',
