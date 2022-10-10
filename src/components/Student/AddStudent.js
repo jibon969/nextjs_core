@@ -10,10 +10,10 @@ const AddStudent = () => {
     const [dept, setDept] = useState('');
     const [roll, setRoll] = useState('');
 
-    // const [showModal, setShowModal] = useState(false);
-    // const handleModalShow = () => {
-    //     setShowModal(true)
-    // };
+    const [showModal, setShowModal] = useState(false);
+    const handleModalShow = () => {
+        setShowModal(true)
+    };
 
     const addStudent = (event) => {
         event.preventDefault();

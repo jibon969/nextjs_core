@@ -1,4 +1,4 @@
-const DeleteStudent = ({id, deleteStudent}) => {
+const DeleteStudent = ({id, deleteStudent, handleModalClose}) => {
 
     return (
         <>
@@ -28,7 +28,7 @@ const DeleteStudent = ({id, deleteStudent}) => {
                                 <h6 className="mb-4">
                                     Are you sure you want to delete this item ?
                                 </h6>
-                                <button className="btn btn-danger" onClick={() => deleteStudent(id)}>Yes</button>
+                                <button className="btn btn-danger" onClick={() => deleteStudent(id) }>Yes</button>
                                 <span className="mx-1"/>
                                 <button className="btn btn-primary">No</button>
                             </div>
