@@ -3,9 +3,6 @@ import {useRouter} from 'next/router'
 
 const EditStudent = ({id, data}) => {
 
-    console.log("ID", id)
-    console.log("data", data)
-
     const [name, setName] = useState('');
     const [dept, setDept] = useState('');
     const [roll, setRoll] = useState('');

@@ -26,10 +26,6 @@ const StudentsPage = ({students}) => {
         setShowModal(true)
     };
 
-    const router = useRouter();
-    // const {id} = router.query;
-
-
     // Delete user
     const deleteStudent = (id) => {
         fetch(`http://127.0.0.1:8000/student-details/${id}/`, {
@@ -43,7 +39,6 @@ const StudentsPage = ({students}) => {
             })
 
     };
-
 
     return (
         <div>
@@ -97,6 +92,7 @@ const StudentsPage = ({students}) => {
                                                 id={data.id}
                                                 data={data}
                                             />
+
                                             <span className="mx-1"/>
                                             <DeleteStudent
                                                 showmodal={handleModalShow}
