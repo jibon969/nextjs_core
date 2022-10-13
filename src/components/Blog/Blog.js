@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+
 const Blog = ({posts}) => {
     return (
         <div>
@@ -12,7 +13,7 @@ const Blog = ({posts}) => {
                     <div className="col-md-3 mb-3">
                         <div className="search">
                             <form action="#">
-                                <input type="text" placeholder="Search Here ..." className="form-control"/>
+                                <input type="text" placeholder="Search Here ..." className="form-control" />
                             </form>
                         </div>
                     </div>
