@@ -85,26 +85,12 @@ const StudentsPage = ({students}) => {
                             </thead>
                             <tbody>
                             {
-                                students.map((data) => (
+                                students && students?.map((data) => (
                                     <tr className="text-center">
                                         <th scope="row" key={data.id}>{data.id}</th>
                                         <td>{data.name}</td>
                                         <td>{data.dept}</td>
                                         <td>{data.roll}</td>
-                                        <td>
-                                            <EditStudent
-                                                showmodal={handleModalShow}
-                                                id={data.id}
-                                                data={data}
-                                            />
-
-                                            <span className="mx-1"/>
-                                            <DeleteStudent
-                                                showmodal={handleModalShow}
-                                                id={data.id}
-                                                deleteStudent={deleteStudent}
-                                            />
-                                        </td>
                                     </tr>
                                 ))
                             }
