@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
-const Blog = ({posts}) => {
+const Blog = ({data}) => {
     return (
         <div>
             <div className="container my-5">
@@ -20,7 +20,7 @@ const Blog = ({posts}) => {
                 </div>
                 <div className="row">
                     {
-                        posts.results.map((post) => (
+                        data && data.results?.map((post) => (
                             <div className="col-md-4 mb-4">
                                 <div className="card">
                                     <img src={post.image} style={{width: "100%", height: 250}} className="img-responsive"/>
