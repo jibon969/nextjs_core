@@ -91,16 +91,6 @@ const StudentsPage = ({students}) => {
                                         <td>{data.name}</td>
                                         <td>{data.dept}</td>
                                         <td>{data.roll}</td>
-                                        {/*<td>*/}
-                                            {/*<EditStudent*/}
-                                                {/*showmodal={handleModalShow}*/}
-                                            {/*/>*/}
-
-                                            {/*<span className="mx-1"/>*/}
-                                            {/*<DeleteStudent*/}
-                                                {/*showmodal={handleModalShow}*/}
-                                            {/*/>*/}
-                                        {/*</td>*/}
                                     </tr>
                                 ))
                             }
