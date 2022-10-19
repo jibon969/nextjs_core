@@ -1,20 +1,27 @@
-// import react from 'react'
+import {useState, useEffect} from 'react'
 
 const Employee = () => {
 
-
-  
+    const [employee, setEmployee] = useState(null);
 
     const getEmployee = () => {
-        console.log("Hello Function ");
-        const employee = fetch('http://127.0.0.1:8000/blog/');
-        console.log("Employee :", employee)
+        const res = fetch('http://127.0.0.1:8000/blog/')
+            .then((response) => response.json())
+            .then((data) => (
+                setEmployee(data
+                )
+            ));
     };
+    useEffect(() => {
+        getEmployee()
+    }, []);
+
+    console.log("Data :", employee);
 
     return (
         <div>
             <div className="container mt-3">
-                <h2 className="text-center" onClick={getEmployee}>Hello employee</h2>
+                <h2 className="text-center">Hello employee</h2>
                 <hr/>
                 <div className="row">
                     <div className="col">
@@ -23,21 +30,24 @@ const Employee = () => {
                             <tr className="text-center">
                                 <th scope="col">ID</th>
                                 <th scope="col">Title</th>
-                                <th scope="col">Image</th>
                                 <th scope="col">Category</th>
                                 <th scope="col">Description</th>
                                 <th scope="col">Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr className="text-center">
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                            </tr>
+                            {
+                                employee?.results.map((data) => (
+                                    <tr className="text-center" key={data.id}>
+                                        <th scope="row">{data.id}</th>
+                                        <td>{data.title}</td>
+                                        <td>{data.category}</td>
+                                        <td>{data.description}</td>
+                                        <td>Edit</td>
+                                    </tr>
+                                ))
+                            }
+
                             </tbody>
                         </table>
                     </div>
