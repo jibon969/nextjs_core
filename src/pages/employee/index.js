@@ -3,7 +3,6 @@ import {useState, useEffect} from 'react'
 const Employee = () => {
     const messageLoading = <p className="text-center p-5">Loading ..........</p>;
 
-
     const [employee, setEmployee] = useState(null);
     const [isLoading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -11,7 +10,7 @@ const Employee = () => {
     const getEmployee = () => {
 
         setTimeout(() => {
-            fetch("http://127.0.0.1:8000/blogee/")
+            fetch("http://127.0.0.1:8000/blog/")
                 .then((res) => {
                     if (!res.ok) {
                         throw Error("Fetching is not successful")
@@ -29,7 +28,7 @@ const Employee = () => {
                     setError(error.message);
                     setLoading(false);
                 })
-        }, 3000)
+        }, 2000)
 
     };
 
@@ -80,7 +79,7 @@ const Employee = () => {
     else {
         return (
             <div>
-                <p>Error : {error}</p>
+                <p className="text-center">{error}</p>
                 {isLoading && messageLoading}
             </div>
         )
