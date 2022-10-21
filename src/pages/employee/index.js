@@ -5,18 +5,16 @@ const Employee = () => {
     const [employee, setEmployee] = useState(null);
 
     const getEmployee = () => {
-        const res = fetch('http://127.0.0.1:8000/blog/')
+        fetch('http://127.0.0.1:8000/blog/')
             .then((response) => response.json())
             .then((data) => (
-                setEmployee(data
-                )
+                setEmployee(data)
             ));
     };
     useEffect(() => {
         getEmployee()
     }, []);
-
-    console.log("Data :", employee);
+   
 
     return (
         <div>
