@@ -2,14 +2,14 @@ import {useState, useEffect} from 'react';
 
 const AddEmployee = () => {
 
-    const [title, setTitle] = useState('');
-    const [category, setCategory] = useState('');
-    const [description, setDescription] = useState('');
+    const [name, setName] = useState('');
+    const [dept, setDept] = useState('');
+    const [roll, setRoll] = useState('');
 
     const handleSubmit = () => {
         event.preventDefault();
-        let data = {title, category, description};
-        fetch(`http://127.0.0.1:8000/blog/`, {
+        let data = {name, dept, roll};
+        fetch(`http://127.0.0.1:8000/student-list/`, {
             method: "POST",
             headers: {
                 'Accept': 'application/json',
@@ -34,30 +34,30 @@ const AddEmployee = () => {
                                     type="text"
                                     className="form-control mb-3"
                                     placeholder="Name"
-                                    name="title"
-                                    value={title}
+                                    name="name"
+                                    value={name}
                                     onChange={(e) => {
-                                        setTitle(e.target.value)
+                                        setName(e.target.value)
                                     }}
                                 />
                                 <input
                                     type="text"
                                     className="form-control mb-3"
                                     placeholder="Department"
-                                    name="category"
-                                    value={category}
+                                    name="dept"
+                                    value={dept}
                                     onChange={(e) => {
-                                        setCategory(e.target.value)
+                                        setDept(e.target.value)
                                     }}
                                 />
                                 <input
                                     type="text"
                                     className="form-control mb-3"
-                                    placeholder="Description"
-                                    name="description"
-                                    value={description}
+                                    placeholder="roll"
+                                    name="roll"
+                                    value={roll}
                                     onChange={(e) => {
-                                        setDescription(e.target.value)
+                                        setRoll(e.target.value)
                                     }}
                                 />
                                 <button className="btn btn-success" onClick={handleSubmit}>Submit</button>
