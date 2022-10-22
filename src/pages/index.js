@@ -1,45 +1,31 @@
 import Link from 'next/link'
+import Header from '../layouts/Header'
 
-export default function Home() {
+const Home = () => {
     return (
-
-        <div className="container mt-5">
-            <div className="row">
-                <div className="col-md-3">
-                    <div className="card">
-                        <div className="card-body">
-                            <h4>
-                                <Link href="employee">
-                                    <a>Employee</a>
-                                </Link>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-3">
-                    <div className="card">
-                        <div className="card-body">
-                            <h4>
-                                <Link href="students">
-                                    <a>Student Modal</a>
-                                </Link>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-3">
-                    <div className="card">
-                        <div className="card-body">
-                            <h4>
-                                <Link href="students">
-                                    <a>Blog</a>
-                                </Link>
-                            </h4>
+        <>
+            <Header/>
+            <hr/>
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <div className="col-md-4">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h3 className="text-center">
+                                        <Link href="/student">
+                                            <a>Student List</a>
+                                        </Link>
+                                    </h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
-}
+};
+
+export default Home;
 
