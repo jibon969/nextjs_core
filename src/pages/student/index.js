@@ -2,29 +2,13 @@ import React, {useState, useEffect} from 'react';
 import Link from 'next/link'
 import axios from "axios";
 
-
 const messageLoading = <h3 className="text-center">Loading...</h3>;
 
 const Student = () => {
     const [student, setStudent] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
-
-    //
-    // const getStudentList = () => {
-    //     return (
-    //         axios.get('http://127.0.0.1:8000/student-list/')
-    //             .then(response => {
-    //                 // console.log(response);
-    //                 setStudent(response.data);
-    //                 setIsLoading(false);
-    //             }))
-    // };
-
-    // useEffect(() => {
-    //     fetchData();
-    // }, []);
-
+    const [status, setStatus] = useState('');
 
     const getStudentList = () => {
         fetch('http://127.0.0.1:8000/student-list/')
@@ -51,9 +35,43 @@ const Student = () => {
         getStudentList()
     }, []);
 
+    // const handleDeleteStudent = (id) => {
+    //     fetch(`http://127.0.0.1:8000/student-details/${id}/`, {
+    //         method: "DELETE",
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json',
+    //         },
+    //
+    //     }).then((remove) => {
+    //         return remove.json()
+    //     }).catch((err) => {
+    //         console.log(err.message)
+    //     })
+    // };
+
+    // Delete a single item using axios
+    // const handleDeleteStudent = (id) => {
+    //     axios.delete(`http://127.0.0.1:8000/student-details/${id}/`)
+    //         .then(response => {
+    //             console.log(response);
+    //         });
+    // };
+
+    const handleDeleteStudent = async (id) => {
+        const response = await axios.delete(
+            `http://127.0.0.1:8000/student-details/${id}/`
+        );
+        if (response.data.message) {
+            setStatus(response.data.message);
+        }
+    };
+
+
     if (student) {
         return (
             <>
+                <h3>{status}</h3>
                 <div className="container mt-5">
                     <h4 className="text-center">Student List</h4>
                     <hr/>
@@ -109,7 +127,9 @@ const Student = () => {
                                                     <button className="btn btn-primary mx-1">
                                                         Edit
                                                     </button>
-                                                    <button className="btn btn-danger">
+                                                    <button
+                                                        className="btn btn-danger"
+                                                        onClick={() => handleDeleteStudent(data.id)}>
                                                         Delete
                                                     </button>
                                                 </td>
