@@ -38,6 +38,19 @@ const Employee = () => {
     }, []);
 
 
+    const handleDeleteEmployee = (id) => {
+        fetch(`http://127.0.0.1:8000/student-details/${id}/`, {
+            method: "DELETE",
+            headers: {
+                'Content-type': 'application/json'
+            }
+        }).then((remove) => console.log(remove))
+            .catch((err) => {
+                console.log(err.message)
+            })
+    };
+
+
     if (student) {
         return (
             <div>
@@ -71,7 +84,7 @@ const Employee = () => {
                                             <td>{data.roll}</td>
                                             <td>
                                                 <button className="btn btn-primary">Edit</button>
-                                                <button className="btn btn-danger">Delete</button>
+                                                <button className="btn btn-danger" onClick={()=>handleDeleteEmployee(data.id)}>Delete</button>
                                             </td>
                                         </tr>
                                     ))
