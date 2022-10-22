@@ -1,26 +1,29 @@
 import {useState, useEffect} from 'react';
 
-const AddEmployee = () => {
+const UpdateEmployee = () => {
 
     const [name, setName] = useState('');
     const [dept, setDept] = useState('');
     const [roll, setRoll] = useState('');
 
-    const handleSubmit = () => {
-        event.preventDefault();
-        let data = {name, dept, roll};
-        fetch(`http://127.0.0.1:8000/student-list/`, {
-            method: "POST",
+    const handleUpdateEmployee = (id) => {
+        fetch(`http://127.0.0.1:8000/student-details/${id}/`, {
+            method: "PUT",
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data)
-        }).then((res) => console.log("adding ....", res))
+            body: JSON.stringify({
+                'name': "jayed",
+                'dept': "WWW",
+                'roll': 49
+            })
+        }).then((res) => console.log(res))
             .catch((err) => {
                 console.log(err.message)
             })
     };
+
 
     return (
         <div className="container mt-5">
@@ -60,7 +63,7 @@ const AddEmployee = () => {
                                         setRoll(e.target.value)
                                     }}
                                 />
-                                <button className="btn btn-success" onClick={handleSubmit}>Submit</button>
+                                <button className="btn btn-success" onClick={handleUpdateEmployee}>Submit</button>
                             </form>
                         </div>
                     </div>
@@ -69,4 +72,4 @@ const AddEmployee = () => {
         </div>
     )
 };
-export default AddEmployee;
+export default UpdateEmployee;
