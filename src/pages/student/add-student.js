@@ -1,6 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import Link from 'next/link'
-import axios from "axios";
+import React, {useState} from 'react';
 
 const AddStudent = () => {
     const [name, setName] = useState('');
