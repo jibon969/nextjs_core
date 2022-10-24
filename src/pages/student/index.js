@@ -67,6 +67,14 @@ const Student = () => {
         }
     };
 
+    const getSingleStudent = (id) =>{
+        fetch(`http://127.0.0.1:8000/student-details/${id}/`)
+            .then((res) => res.json())
+            .then((data) =>{
+                console.log("Data", data)
+            })
+    };
+
 
     if (student) {
         return (
@@ -124,7 +132,7 @@ const Student = () => {
                                                 <td>{data?.dept}</td>
                                                 <td>{data?.roll}</td>
                                                 <td className="text-center">
-                                                    <button className="btn btn-primary mx-1">
+                                                    <button className="btn btn-primary mx-1" onClick={() =>getSingleStudent(data.id)}>
                                                         Edit
                                                     </button>
                                                     <button
