@@ -75,7 +75,6 @@ const Student = () => {
             })
     };
 
-
     if (student) {
         return (
             <>
