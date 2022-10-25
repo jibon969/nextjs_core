@@ -5,6 +5,7 @@ import axios from "axios";
 const messageLoading = <h3 className="text-center">Loading...</h3>;
 
 const Student = () => {
+
     const [student, setStudent] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -24,7 +25,6 @@ const Student = () => {
                 setStudent(data);
                 setIsLoading(false);
             })
-
             .catch((error) => {
                 setError(error.message);
                 setIsLoading(false);
@@ -182,7 +182,6 @@ const Student = () => {
             </div>
         )
     }
-
 
 };
 
