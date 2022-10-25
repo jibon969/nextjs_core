@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d29fe1-7195-46a1-91c0-f8b859c7da88" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog/Blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/student/add-student.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/student/add-student.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/student/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/student/index.js" afterDir="false" />
     </list>
@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add-student.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add-student.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/student/add-student.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="198">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -27,12 +27,22 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/student/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="462">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-                <marker date="1666717710170" expanded="true" signature="400:1027" ph="..." />
+                <element signature="e#2308#7553#0" />
+                <marker date="1666718316404" expanded="true" signature="401:1027" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Blog.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Blog/Blog.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -53,7 +63,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/pages/api/hello.js" />
-        <option value="$PROJECT_DIR$/src/components/Blog/Blog.js" />
         <option value="$PROJECT_DIR$/src/pages/blog/index.js" />
         <option value="$PROJECT_DIR$/src/pages/students/index.js" />
         <option value="$PROJECT_DIR$/src/pages/employe/index.js" />
@@ -65,8 +74,9 @@
         <option value="$PROJECT_DIR$/src/layouts/Header/index.js" />
         <option value="$PROJECT_DIR$/src/layouts/Header/Header.module.css" />
         <option value="$PROJECT_DIR$/src/pages/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/student/index.js" />
         <option value="$PROJECT_DIR$/src/pages/student/add-student.js" />
+        <option value="$PROJECT_DIR$/src/pages/student/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Blog/Blog.js" />
       </list>
     </option>
   </component>
@@ -121,19 +131,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nextjs_core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nextjs_core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nextjs_core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nextjs_core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,7 +192,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15458423" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -300,7 +297,6 @@
     <entry file="file://$PROJECT_DIR$/src/pages/students/index.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/blog/index.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/blog/[id].js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Blog/Blog.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/employee/update.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/employee/index.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/tryNextjs/dynamic-form.js">
@@ -345,21 +341,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/student/add-student.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/student/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="462">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-            <marker date="1666717710170" expanded="true" signature="400:1027" ph="..." />
+            <element signature="e#2308#7553#0" />
+            <marker date="1666718316404" expanded="true" signature="401:1027" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/student/add-student.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Blog/Blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="88">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
