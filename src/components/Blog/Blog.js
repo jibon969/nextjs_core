@@ -1,5 +1,6 @@
 
-const Blog = () =>{
+const Blog = ({blog}) =>{
+    console.log("Blog", blog);
     return(
         <div>
             <h3>Hello</h3>
