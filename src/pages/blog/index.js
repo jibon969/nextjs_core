@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react';
+import Blog from '../../components/Blog/Blog';
 
 const getBlogData = () => {
-    const [data, setData] = useState(null);
+    const [blog, setBlog] = useState(null);
 
     fetch('http://127.0.0.1:8000/blog/')
         .then((res) => {
             return res.json()
         })
         .then((data) => {
-            setData(data)
+            setBlog(data)
         })
         .catch((errors) => {
             console.log("Errors", errors)
@@ -22,7 +23,7 @@ useEffect(() => {
 const Index = () => {
     return (
         <div>
-            <h3>Hello</h3>
+            <Blog blog={blog} />
         </div>
     )
 };
