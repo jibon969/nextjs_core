@@ -4,6 +4,7 @@ import BlogList from '../../components/Blog/BlogList';
 
 const Index = () => {
 
+    const messageLoading = <h3 className="text-center">Loading...</h3>;
     const [blogData, setBlogData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -32,11 +33,24 @@ const Index = () => {
         getBlogList()
     }, []);
 
-    return (
-        <div>
-            <BlogList blogData={blogData}/>
-        </div>
-    )
+    
+    if (blogData) {
+        return (
+            <div>
+                <BlogList blogData={blogData}/>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div>
+                <p className="text-center">Error : {error}</p>
+                {isLoading && messageLoading}
+            </div>
+        )
+    }
+
+
 };
 
 export default Index;
