@@ -23,7 +23,7 @@ useEffect(() => {
 const Index = () => {
     return (
         <div>
-            <Blog blog={blog} />
+            <Blog />
         </div>
     )
 };
