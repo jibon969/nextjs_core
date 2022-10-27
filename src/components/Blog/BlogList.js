@@ -1,11 +1,11 @@
-const Blog = ({blog}) => {
-    console.log("Blog", blog);
+const BlogList = ({blogData}) => {
+    console.log("myNumber", blogData);
     return (
         <div>
-            <div className="container">
+            <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-4">
-                        <div className="card" style="width: 18rem;">
+                        <div className="card">
                             <img src="" className="card-img-top" alt="..."/>
                                 <div className="card-body">
                                     <h5 className="card-title">Card title</h5>
@@ -21,4 +21,4 @@ const Blog = ({blog}) => {
 )
 };
 
-export default Blog;
+export default BlogList;
