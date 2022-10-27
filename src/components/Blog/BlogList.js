@@ -1,5 +1,5 @@
 const BlogList = ({blogData}) => {
-    console.log("myNumber", blogData);
+
     return (
         <div>
             <div className="container mt-4">

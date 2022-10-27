@@ -3,24 +3,6 @@ import BlogList from '../../components/Blog/BlogList';
 
 
 const Index = () => {
-    // const getBlogData = () => {
-    //     const [blog, setBlog] = useState(null);
-    //
-    //     fetch('http://127.0.0.1:8000/blog/')
-    //         .then((res) => {
-    //             return res.json()
-    //         })
-    //         .then((data) => {
-    //             setBlog(data)
-    //         })
-    //         .catch((errors) => {
-    //             console.log("Errors", errors)
-    //         })
-    // };
-    //
-    // useEffect(() => {
-    //     getBlogData()
-    // }, []);
 
     const [blogData, setBlogData] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
