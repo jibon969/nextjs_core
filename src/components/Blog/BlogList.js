@@ -1,4 +1,3 @@
-import Link from 'next/link'
 
 const BlogList = ({blogData}) => {
     return (
@@ -24,7 +23,6 @@ const BlogList = ({blogData}) => {
                             </div>
                         ))
                     }
-
                 </div>
             </div>
         </div>
