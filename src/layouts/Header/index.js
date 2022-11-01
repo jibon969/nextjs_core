@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from "next/future/image";
 import styles from './Header.module.css'
 
 
@@ -23,6 +22,11 @@ const Index = () => {
                                 <li className="nav-item">
                                     <Link href="/">
                                         <a className="nav-link text-white" href="#">About</a>
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link href="/blog">
+                                        <a className="nav-link text-white">Blog</a>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
