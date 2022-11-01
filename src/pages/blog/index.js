@@ -33,6 +33,13 @@ const Index = () => {
         getBlogList()
     }, []);
 
+    if(isLoading){
+        return(
+            <div>
+                <h4 className="text-center">Loading ....</h4>
+            </div>
+        )
+    }
     
     if (blogData) {
         return (
