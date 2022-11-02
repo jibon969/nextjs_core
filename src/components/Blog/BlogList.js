@@ -6,6 +6,14 @@ const BlogList = ({blogData}) => {
                 <h3 className="text-center">Blog</h3>
                 <hr/>
                 <div className="row">
+                    <div className="col-md-3"/>
+                    <div className="col-md-9">
+                        <div className="float-right">
+                            <input type="text" placeholder="Search" className="form-control"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
                     {
                         blogData && blogData.results.map((data, index) => (
                             <div className="col-md-4" key={index}>
