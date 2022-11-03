@@ -20,8 +20,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateStudent.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UpdateStudent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Student/UpdateStudent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteStudent.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Student/DeleteStudent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
@@ -50,6 +59,7 @@
         <option value="$PROJECT_DIR$/src/components/Student/index.js" />
         <option value="$PROJECT_DIR$/src/components/Student/AddStudent.js" />
         <option value="$PROJECT_DIR$/src/components/Student/UpdateStudent.js" />
+        <option value="$PROJECT_DIR$/src/components/Student/DeleteStudent.js" />
       </list>
     </option>
   </component>
@@ -317,6 +327,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Student/UpdateStudent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Student/DeleteStudent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
