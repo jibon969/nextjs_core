@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Link from 'next/link'
-
+import AddStudent from '../../components/Student/AddStudent'
 
 const messageLoading = <h3 className="text-center">Loading...</h3>;
 
@@ -35,6 +34,7 @@ const Student = () => {
     }, []);
 
 
+
     if (student) {
         return (
             <>
@@ -44,9 +44,7 @@ const Student = () => {
                     <hr/>
                     <div className="row">
                         <div className="col-md-3">
-                            <Link href="/student/add-student">
-                                <a className="btn btn-primary">Add</a>
-                            </Link>
+                            <AddStudent/>
                         </div>
                         <div className="col-md-6"/>
                         <div className="col-md-3">
@@ -91,12 +89,13 @@ const Student = () => {
                                                 <td>{data?.dept}</td>
                                                 <td>{data?.roll}</td>
                                                 <td className="text-center">
-                                                    <button className="btn btn-primary mx-1" onClick={() =>getSingleStudent(data.id)}>
+                                                    <button className="btn btn-primary mx-1"
+                                                            onClick={() => getSingleStudent(data.id)}>
                                                         Edit
                                                     </button>
                                                     <button
                                                         className="btn btn-danger"
-                                                        >
+                                                    >
                                                         Delete
                                                     </button>
                                                 </td>
