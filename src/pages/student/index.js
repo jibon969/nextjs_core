@@ -84,7 +84,7 @@ const Student = () => {
                                     </thead>
                                     <tbody>
                                     {
-                                        student && student.map(data => (
+                                        student && student.results?.map(data => (
                                             <tr className="text-center" key={data.id}>
                                                 <th scope="row">{data.id}</th>
                                                 <td>{data?.name}</td>
@@ -96,7 +96,7 @@ const Student = () => {
                                                     </button>
                                                     <button
                                                         className="btn btn-danger"
-                                                        onClick={() => handleDeleteStudent(data.id)}>
+                                                        >
                                                         Delete
                                                     </button>
                                                 </td>
