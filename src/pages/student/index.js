@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import AddStudent from '../../components/Student/AddStudent'
+import DeleteStudent from '../../components/Student/DeleteStudent'
+
 
 const messageLoading = <h3 className="text-center">Loading...</h3>;
 
@@ -8,6 +10,8 @@ const Student = () => {
     const [student, setStudent] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    const [deleteStudent, setDeleteStudent] = useState(null);
 
     const getStudentList = () => {
         fetch('http://127.0.0.1:8000/student-list/')
@@ -33,6 +37,11 @@ const Student = () => {
         getStudentList()
     }, []);
 
+
+    const handleDeleteStudent = (id) => {
+        console.log("ID :", id);
+        setDeleteStudent(id)
+    };
 
 
     if (student) {
@@ -82,27 +91,21 @@ const Student = () => {
                                     </thead>
                                     <tbody>
                                     {
-                                        student && student.results?.map(data => (
+                                        student.results?.map(data => (
                                             <tr className="text-center" key={data.id}>
                                                 <th scope="row">{data.id}</th>
                                                 <td>{data?.name}</td>
                                                 <td>{data?.dept}</td>
                                                 <td>{data?.roll}</td>
                                                 <td className="text-center">
-                                                    <button className="btn btn-primary mx-1"
-                                                            onClick={() => getSingleStudent(data.id)}>
+                                                    <button className="btn btn-primary mx-1">
                                                         Edit
                                                     </button>
-                                                    <button
-                                                        className="btn btn-danger"
-                                                    >
-                                                        Delete
-                                                    </button>
+                                                    <DeleteStudent handleDeleteStudent={handleDeleteStudent(data.id)}/>
                                                 </td>
                                             </tr>
                                         ))
                                     }
-
                                     </tbody>
                                 </table>
                             </div>
