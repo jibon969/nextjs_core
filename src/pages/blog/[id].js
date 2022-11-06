@@ -1,25 +1,64 @@
-import {useRouter} from "next/router";
+import {useRouter} from 'next/router'
+import {useEffect, useState} from "react";
+import BlogDetail from '../../components/Blog/BlogDetail'
 
-const BlogDetail = () => {
+const BlogDetailPage = () => {
     const router = useRouter();
+    const {id} = router.query;
 
-    console.log(router.query);
-    return (
-        <div>
-            <div className="container mt-3">
-                <h3 className="text-center">Blog Detail</h3>
-                <hr/>
-                <div className="row">
-                    <div className="col-md-8">
-                        <h4>Hello</h4>
-                    </div>
-                    <div className="col-md-4">
-                        <h4>Related Post</h4>
-                    </div>
-                </div>
+    const [blogDetail , setDetail] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    const getBlogDetail = () => {
+        fetch(`http://127.0.0.1:8000/blog/${id}/`)
+            .then((res) => {
+                if (!res.ok) {
+                    throw Error("Fetching is not successful")
+                }
+                else {
+                    return res.json()
+                }
+            })
+            .then((data) => {
+                setDetail(data);
+                setIsLoading(false);
+            })
+            .catch((error) => {
+                setError(error.message);
+                setIsLoading(false);
+            })
+    };
+
+    useEffect(() => {
+        getBlogDetail()
+    }, []);
+
+
+    if (isLoading) {
+        return (
+            <div>
+                <h4 className="text-center">Loading ....</h4>
             </div>
-        </div>
-    )
+        )
+    }
+
+    if (blogDetail) {
+        return (
+            <div>
+                <BlogDetail blogDetail={blogDetail}/>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div>
+                <p className="text-center">Error : {error}</p>
+                {isLoading}
+            </div>
+        )
+    }
+
 };
 
-export default BlogDetail;
+export default BlogDetailPage;
