@@ -1,4 +1,9 @@
+import {useRouter} from "next/router";
+
 const BlogDetail = () => {
+    const router = useRouter();
+
+    console.log(router.query);
     return (
         <div>
             <div className="container mt-3">
