@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import BlogList from '../../components/Blog/BlogList';
 
-
 const Index = () => {
 
     const messageLoading = <h3 className="text-center">Loading...</h3>;
@@ -33,14 +32,14 @@ const Index = () => {
         getBlogList()
     }, []);
 
-    if(isLoading){
-        return(
+    if (isLoading) {
+        return (
             <div>
                 <h4 className="text-center">Loading ....</h4>
             </div>
         )
     }
-    
+
     if (blogData) {
         return (
             <div>

@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const BlogList = ({blogData}) => {
     return (
         <div>
@@ -23,8 +25,9 @@ const BlogList = ({blogData}) => {
                                         <h5 className="card-title">{data.title}</h5>
                                         <p className="card-text">{data.title}</p>
                                         <div className="d-grid">
-                                            <button type="button" className="btn btn-secondary btn-block">Read More
-                                            </button>
+                                            <Link href={`blog/${data.id}`}>
+                                                <a className="btn btn-secondary btn-block">Read More</a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
