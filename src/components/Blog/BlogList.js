@@ -19,8 +19,11 @@ const BlogList = ({blogData}) => {
                         blogData && blogData.results.map((data, index) => (
                             <div className="col-md-4" key={index}>
                                 <div className="card">
-                                    <img src={data?.image} className="card-img-top" alt="Oops this is an image"
-                                         width="200" height="250"/>
+                                    <img src={data?.image}
+                                         className="card-img-top"
+                                         alt="Oops this is an image"
+                                         width="200" height="250"
+                                    />
                                     <div className="card-body">
                                         <h5 className="card-title">{data.title}</h5>
                                         <p className="card-text">{data.title}</p>
