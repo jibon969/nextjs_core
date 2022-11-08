@@ -1,6 +1,8 @@
 import {useRouter} from "next/router";
 
-const BlogDetail = () => {
+const BlogDetail = ({blogDetail}) => {
+    console.log("blogDetail :", blogDetail);
+
     const router = useRouter();
 
     console.log(router.query);
@@ -21,5 +23,17 @@ const BlogDetail = () => {
         </div>
     )
 };
+
+
+export async function getServerSideProps(context) {
+    const teacher = await getTeacherDetailApi(context.params.slug);
+    return {
+        props: {
+            teacher,
+        },
+    };
+}
+
+
 
 export default BlogDetail;
