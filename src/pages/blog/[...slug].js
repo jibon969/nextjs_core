@@ -1,10 +1,5 @@
-import {useRouter} from "next/router";
 
-const BlogDetail = ({blogDetail}) => {
-    console.log("blogDetail :", blogDetail);
-    const router = useRouter();
-    console.log(router.query);
-
+const BlogDetail = ({blog_detail}) => {
     return (
         <div>
             <div className="container mt-3">
@@ -12,7 +7,7 @@ const BlogDetail = ({blogDetail}) => {
                 <hr/>
                 <div className="row">
                     <div className="col-md-8">
-                        <h4>Hello</h4>
+                        <h4>Title : {blog_detail.title}</h4>
                     </div>
                     <div className="col-md-4">
                         <h4>Related Post</h4>
@@ -24,11 +19,17 @@ const BlogDetail = ({blogDetail}) => {
 };
 
 
-export async function getServerSideProps(context) {
-    const res = await fetch(`http://127.0.0.1:8000/blog/${context.params.slug}`);
-    const blogData = await res.json();
+export async function getServerSideProps({params}) {
+
+    // Fetch brand data from external API
+    let blog_fetch_url = `http://127.0.0.1:8000/blog/detail/${params.slug}`;
+    const blog_res = await fetch(blog_fetch_url);
+    const blog_detail = await blog_res.json();
+
     return {
-        props: {blogData}
+        props: {
+            "blog_detail": blog_detail
+        }
     }
 }
 
