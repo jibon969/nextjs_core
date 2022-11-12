@@ -28,7 +28,7 @@ const BlogList = ({blogData}) => {
                                         <h5 className="card-title">{data.title}</h5>
                                         <p className="card-text">{data.title}</p>
                                         <div className="d-grid">
-                                            <Link href={`blog/${data.id}`}>
+                                            <Link href={`blog/${data.slug}`}>
                                                 <a className="btn btn-secondary btn-block">Read More</a>
                                             </Link>
                                         </div>
