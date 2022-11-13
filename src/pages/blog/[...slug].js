@@ -10,18 +10,30 @@ const BlogDetail = ({blog_detail}) => {
                 <hr/>
                 <div className="row">
                     <div className="col-md-8">
-                        {
-                            blog_detail.image ?
-                                <img src={blog_detail.image} alt="Oops image is missing" width={850} height={450} />
-                                :
-                                <Image
-                                    src={blogImage}
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, max-width: 1200px) 50vw, 33vw"
-                                />
-                        }
-                        <h4 className="my-3">{blog_detail.title}</h4>
-                        <p className="my-3">{blog_detail.description}</p>
+                        <div className="blog-detail">
+                            {
+                                blog_detail.image ?
+                                    <img src={blog_detail.image} alt="Oops image is missing" width={850} height={450}/>
+                                    :
+                                    <Image
+                                        src={blogImage}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, max-width: 1200px) 50vw, 33vw"
+                                    />
+                            }
+                            <h4 className="my-3">{blog_detail.title}</h4>
+                            <p className="my-3">{blog_detail.description}</p>
+                        </div>
+                        <div>
+                            <div className="blog-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Enter your name" className="form-control mb-3" />
+                                    <input type="text" placeholder="Enter your email" className="form-control mb-3"/>
+                                    <input type="text" placeholder="Enter your Phone" className="form-control mb-3"/>
+                                    <button className="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-md-4">
                         <h4>Related Post</h4>
