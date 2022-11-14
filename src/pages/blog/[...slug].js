@@ -34,7 +34,6 @@ const BlogDetail = ({blog_detail}) => {
                                         </p>
                                     </div>
                                 </div>
-
                                 <p className="mt-3 mb-4 pb-2">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod
@@ -64,12 +63,21 @@ const BlogDetail = ({blog_detail}) => {
                                     <img className="rounded-circle shadow-1-strong me-3"
                                          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
                                          alt="avatar" width="40"
-                                         height="40"/>
+                                         height="40"
+                                    />
                                     <div className="form-outline w-100">
-                                                            <textarea
-                                                                className="form-control"
-                                                                id="textAreaExample" rows="4"
-                                                            />
+                                        <div className="row">
+                                            <div className="col-md-6 mb-3">
+                                                <input type="text" placeholder="Enter your name" className="form-control"/>
+                                            </div>
+                                            <div className="col-md-6 mb-3">
+                                                <input type="text" placeholder="Enter your email" className="form-control"/>
+                                            </div>
+                                        </div>
+                                        <textarea
+                                            className="form-control"
+                                            id="textAreaExample" rows="4"
+                                        />
                                         <label
                                             className="form-label"
                                             htmlFor="textAreaExample">
