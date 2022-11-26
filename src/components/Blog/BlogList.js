@@ -4,7 +4,7 @@ import {useRouter} from 'next/router'
 
 
 const BlogList = ({blogData}) => {
-    const router = useRouter();
+    
     return (
         <div>
             <div className="container mt-4">
