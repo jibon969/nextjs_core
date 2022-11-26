@@ -9,7 +9,7 @@ const BlogDetail = ({blog_detail}) => {
                 <h3 className="text-center">Blog Detail</h3>
                 <hr/>
                 <div className="row">
-                    <div className="col-md-8">
+                    <div className="col-md-8 mb-3">
                         <div className="blog-detail">
                             {
                                 blog_detail.image ?
@@ -95,8 +95,13 @@ const BlogDetail = ({blog_detail}) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-3">
                         <h4>Related Post</h4>
+                        <div className="card">
+                            <div className="card-body">
+                                <h2>Hello</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,10 +111,12 @@ const BlogDetail = ({blog_detail}) => {
 
 
 export async function getServerSideProps({params}) {
+
     // Fetch brand data from external API
     let blog_fetch_url = `http://127.0.0.1:8000/blog/detail/${params.slug}`;
     const blog_res = await fetch(blog_fetch_url);
     const blog_detail = await blog_res.json();
+
     return {
         props: {
             "blog_detail": blog_detail
