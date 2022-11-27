@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import blogImage from '/public/image/best-programming-blogs.jpg'
 
-const BlogDetail = ({blog_detail}) => {
 
+const BlogDetail = ({blog_detail}) => {
     return (
         <div>
             <div className="container mt-3">
@@ -68,10 +68,12 @@ const BlogDetail = ({blog_detail}) => {
                                     <div className="form-outline w-100">
                                         <div className="row">
                                             <div className="col-md-6 mb-3">
-                                                <input type="text" placeholder="Enter your name" className="form-control"/>
+                                                <input type="text" placeholder="Enter your name"
+                                                       className="form-control"/>
                                             </div>
                                             <div className="col-md-6 mb-3">
-                                                <input type="text" placeholder="Enter your email" className="form-control"/>
+                                                <input type="text" placeholder="Enter your email"
+                                                       className="form-control"/>
                                             </div>
                                         </div>
                                         <textarea
