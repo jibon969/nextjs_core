@@ -1,7 +1,14 @@
 const ContactPage = () => {
     return (
         <div>
-            <h3>Hello, there</h3>
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <h2 className="text-center">Contact Us</h2>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 };
