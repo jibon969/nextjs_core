@@ -25,13 +25,13 @@ const Index = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/blog">
+                                    <Link href={`/blog`}>
                                         <a className="nav-link text-white">Blog</a>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/">
-                                        <a className="nav-link text-white" href="#">Contact</a>
+                                    <Link href={`/contact`}>
+                                        <a className="nav-link text-white">Contact</a>
                                     </Link>
                                 </li>
                             </ul>
