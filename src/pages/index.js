@@ -4,8 +4,6 @@ import Header from '../layouts/Header'
 const Home = () => {
     return (
         <>
-            <Header/>
-            <hr/>
             <div className="container">
                 <div className="row">
                     <div className="col">
