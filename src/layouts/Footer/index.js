@@ -9,24 +9,36 @@ const IndexPage = () => {
                         <span>Get connected with us on social networks:</span>
                     </div>
                     <div>
-                        <a href="#" className="me-4 link-secondary">
-                            <i className="fa fa-facebook"/>
-                        </a>
-                        <a href="#" className="me-4 link-secondary">
-                            <i className="fa fa-twitter"/>
-                        </a>
-                        <a href="#" className="me-4 link-secondary">
-                            <i className="fa fa-google"/>
-                        </a>
-                        <a href="#" className="me-4 link-secondary">
-                            <i className="fa fa-instagram"/>
-                        </a>
-                        <a href="#" className="me-4 link-secondary">
-                            <i className="fa fa-linkedin"/>
-                        </a>
-                        <a href="#" className="me-4 link-secondary">
-                            <i className="fa fa-github"/>
-                        </a>
+                        <Link href="#">
+                            <a className="me-4 link-secondary">
+                                <i className="fa fa-facebook"/>
+                            </a>
+                        </Link>
+                        <Link href="#">
+                            <a className="me-4 link-secondary">
+                                <i className="fa fa-twitter"/>
+                            </a>
+                        </Link>
+                        <Link href="#">
+                            <a className="me-4 link-secondary">
+                                <i className="fa fa-google"/>
+                            </a>
+                        </Link>
+                        <Link href="#">
+                            <a className="me-4 link-secondary">
+                                <i className="fa fa-instagram"/>
+                            </a>
+                        </Link>
+                        <Link href="#">
+                            <a className="me-4 link-secondary">
+                                <i className="fa fa-linkedin"/>
+                            </a>
+                        </Link>
+                        <Link href="#">
+                            <a className="me-4 link-secondary">
+                                <i className="fa fa-github"/>
+                            </a>
+                        </Link>
                     </div>
                 </section>
                 <section className="#">
@@ -45,16 +57,22 @@ const IndexPage = () => {
                                     Products
                                 </h6>
                                 <p>
-                                    <a href="#" className="text-reset">Python</a>
+                                    <Link href="#">
+                                        <a className="text-reset">Python</a>
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href="#" className="text-reset">Django</a>
+                                    <Link href="#">
+                                        <a className="text-reset">Django</a>
+                                    </Link>
                                 </p>
                                 <p>
                                     <a href="#" className="text-reset">React</a>
                                 </p>
                                 <p>
-                                    <a href="#" className="text-reset">Next Js</a>
+                                    <Link href="#">
+                                        <a className="text-reset">Next Js</a>
+                                    </Link>
                                 </p>
                             </div>
                             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -62,16 +80,24 @@ const IndexPage = () => {
                                     Useful links
                                 </h6>
                                 <p>
-                                    <a href="#" className="text-reset">Pricing</a>
+                                    <Link href="#">
+                                        <a href="#" className="text-reset">Pricing</a>
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href="#" className="text-reset">Settings</a>
+                                    <Link href="#">
+                                        <a className="text-reset">Settings</a>
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href="#" className="text-reset">Orders</a>
+                                    <Link href="#">
+                                        <a className="text-reset">Orders</a>
+                                    </Link>
                                 </p>
                                 <p>
-                                    <a href="#" className="text-reset">Help</a>
+                                    <Link href="#">
+                                        <a className="text-reset">Help</a>
+                                    </Link>
                                 </p>
                             </div>
                             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
