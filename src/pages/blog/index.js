@@ -11,6 +11,7 @@ const BlogPage = ({blogData}) => {
 };
 
 export async function getServerSideProps() {
+    // Fetch Api
     const res = await fetch(`http://127.0.0.1:8000/blog/`);
     const blogData = await res.json();
     return {props: {blogData}}
