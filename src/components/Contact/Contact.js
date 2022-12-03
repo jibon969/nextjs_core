@@ -19,7 +19,7 @@ const Contact = () => {
             body: JSON.stringify(data)
         }).then((res) => res.json())
             .then(() => {
-                router.push('/about')
+                router.reload()
             })
             .catch((err) => {
                 console.log(err.message)
