@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {useRouter} from 'next/router'
 
 const Contact = () => {
+    
     const router = useRouter();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -19,6 +20,7 @@ const Contact = () => {
             body: JSON.stringify(data)
         }).then((res) => res.json())
             .then(() => {
+
                 router.reload()
             })
             .catch((err) => {
