@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
+import {useRouter} from 'next/router'
 
 const Contact = () => {
+    const router = useRouter();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleContact = (event) => {
-        event.preventDefault();
+    const handleContact = () => {
         let data = {name, email, subject, message};
         fetch(`http://127.0.0.1:8000/contact-list/`, {
             method: "POST",
@@ -17,11 +18,13 @@ const Contact = () => {
             },
             body: JSON.stringify(data)
         }).then((res) => res.json())
+            .then((res) => {
+                router.push('/about')
+            })
             .catch((err) => {
                 console.log(err.message)
             })
     };
-
 
     return (
         <div>
