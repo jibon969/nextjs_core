@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
+import Button from 'rsuite/Button';
 import {useRouter} from 'next/router'
+import {Message} from 'rsuite'
+import {useToaster} from 'rsuite/toaster';
 
 const Contact = () => {
-    
+    const toaster = useToaster();
     const router = useRouter();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
