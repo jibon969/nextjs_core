@@ -18,7 +18,7 @@ const Contact = () => {
             },
             body: JSON.stringify(data)
         }).then((res) => res.json())
-            .then((res) => {
+            .then(() => {
                 router.push('/about')
             })
             .catch((err) => {
