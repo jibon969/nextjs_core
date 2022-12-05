@@ -9,8 +9,6 @@ const DeleteStudent = () => {
                         <div className="card">
                             <div className="card-body">
                                 <h4>Delete Student</h4>
-
-
                             </div>
                         </div>
                     </div>
