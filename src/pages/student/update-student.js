@@ -9,8 +9,6 @@ const UpdateStudent = () => {
                         <div className="card">
                             <div className="card-body">
                                 <h4>Update Student</h4>
-
-
                             </div>
                         </div>
                     </div>
