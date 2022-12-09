@@ -17,11 +17,13 @@ const Index = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                    <Link href="#">
+                                        <a className="nav-link active text-white" aria-current="page">Home</a>
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/">
-                                        <a className="nav-link text-white" href="#">About</a>
+                                    <Link href="#">
+                                        <a className="nav-link text-white">About</a>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
