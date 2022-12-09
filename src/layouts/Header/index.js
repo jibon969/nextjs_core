@@ -8,7 +8,9 @@ const Index = () => {
             <section className={styles.headerSection}>
                 <nav className="navbar navbar-expand-lg navbar-light bg-dark text-white">
                     <div className="container-fluid">
-                        <a className="navbar-brand text-white" href="#">NextjsCore</a>
+                        <Link href="#">
+                            <a className="navbar-brand text-white" >NextJsCore</a>
+                        </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
