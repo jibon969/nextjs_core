@@ -67,7 +67,9 @@ const IndexPage = () => {
                                     </Link>
                                 </p>
                                 <p>
-                                    <a href="#" className="text-reset">React</a>
+                                    <Link href="#">
+                                        <a className="text-reset">React</a>
+                                    </Link>
                                 </p>
                                 <p>
                                     <Link href="#">
@@ -81,7 +83,7 @@ const IndexPage = () => {
                                 </h6>
                                 <p>
                                     <Link href="#">
-                                        <a href="#" className="text-reset">Pricing</a>
+                                        <a className="text-reset">Pricing</a>
                                     </Link>
                                 </p>
                                 <p>
@@ -114,7 +116,7 @@ const IndexPage = () => {
                     </div>
                 </section>
                 <div className="text-center p-4" style={{backgroundColor: "rgba(0, 0, 0, 0.025)"}}>
-                    © 2021 Copyright :
+                    © 2022 Copyright :
                     <a className="text-reset fw-bold mx-1" href="#">Footer</a>
                 </div>
             </footer>
