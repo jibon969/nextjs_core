@@ -117,7 +117,9 @@ const IndexPage = () => {
                 </section>
                 <div className="text-center p-4" style={{backgroundColor: "rgba(0, 0, 0, 0.025)"}}>
                     © 2022 Copyright :
-                    <a className="text-reset fw-bold mx-1" href="#">Footer</a>
+                    <Link href="#">
+                        <a className="text-reset fw-bold mx-1">Footer</a>
+                    </Link>
                 </div>
             </footer>
         </div>
