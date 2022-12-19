@@ -34,6 +34,11 @@ const Index = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item">
+                                    <Link href={`/snippets`}>
+                                        <a className="nav-link text-white">Snippets</a>
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
                                     <Link href={`/contact`}>
                                         <a className="nav-link text-white">Contact</a>
                                     </Link>
