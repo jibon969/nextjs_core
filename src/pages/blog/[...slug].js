@@ -115,7 +115,7 @@ const BlogDetail = ({blog_detail}) => {
 export async function getServerSideProps({params}) {
 
     // Fetch brand data from external API
-    let blog_fetch_url = `http://127.0.0.1:8000/blog/detail/${params.slug}`;
+    let blog_fetch_url = `http://127.0.0.1:7000/blog/detail/${params.slug}`;
     const blog_res = await fetch(blog_fetch_url);
     const blog_detail = await blog_res.json();
 
