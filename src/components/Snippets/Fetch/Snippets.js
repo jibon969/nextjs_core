@@ -1,4 +1,6 @@
-const Snippets = () => {
+const Snippets = ({snippetData}) => {
+
+    console.log("snippetData :", snippetData);
 
     return (
         <>
@@ -12,12 +14,19 @@ const Snippets = () => {
                 </tr>
                 </thead>
                 <tbody>
-                <tr className="text-center">
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
+                {
+                    snippetData?.data?.map((data, index) => (
+                        <tr className="text-center" key={index}>
+                            <th scope="row">{data.id}</th>
+                            <td>{data.title}</td>
+                            <td>{data.code}</td>
+                            <td>
+                                <button className="btn btn-primary">Delete</button>
+                            </td>
+                        </tr>
+                    ))
+                }
+
                 </tbody>
             </table>
         </>
