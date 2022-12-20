@@ -10,7 +10,7 @@ const snippets = () => {
 
 
     const getSnippet = () => {
-        fetch('http://127.0.0.1:7000/snippet/')
+        fetch('http://127.0.0.1:8000/snippet/')
             .then((res) => {
                 if (!res.ok) {
                     throw Error("Fetching is not successful")
