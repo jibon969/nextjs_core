@@ -4,3 +4,7 @@
     display: block;
 }
 
+.navLi:hover {
+    background-color: #9c0d0d;
+
+}
